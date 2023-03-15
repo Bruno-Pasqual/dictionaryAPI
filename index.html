@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dictionary web app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-</body>
+    <title>Frontend Mentor | Dictionary web app</title>
+  </head>
+  <body>
+    <main>
+      <!-- Nav -->
+      <nav>
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <section class="nav_direita">
+          <p class="fonte_selecionada">Mono</p>
+          <img
+            class="arrow_down_icon"
+            src="./assets/images/icon-arrow-down.svg"
+            alt="arrow down icon"
+          />
+          <section class="switch_bar">
+            <div class="circulo"></div>
+          </section>
+          <img src="./assets/images/icon-moon.svg" alt="moon icon" />
+        </section>
+      </nav>
+      <!-- Nav -->
+
+      <!-- Barra de pesquisa -->
+      <div class="container_pesquisa">
+        <input
+          type="text"
+          name="wordInput"
+          id="wordInput"
+          placeholder="Keyboard"
+        />
+        <img
+          src="./assets/images/icon-search.svg "
+          alt="search_icon"
+          class="search_icon"
+        />
+      </div>
+      <!-- Barra de pesquisa -->
+
+      <!-- Output Container -->
+      <div class="output_container">
+        <!-- Head -->
+        <section class="head_definicao">
+          <div class="lado_esquerdo">
+            <h2 class="palavra_pesquisada">Keyboard</h2>
+            <p class="pronuncia_palavra">ˈkiːbɔːd</p>
+          </div>
+          <img src="./assets/images/icon-play.svg" alt="" />
+        </section>
+        <!-- Head -->
+
+        <!-- Body -->
+        <div class="container_definicao">
+          <section class="card_definicao">
+            <p class="title">noun</p>
+            <p class="subtitle">Meaning</p>
+            <ul class="lista_significados">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laudantium, a?
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores quo hic molestiae quis incidunt autem dolores quia
+                quasi voluptatibus impedit!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                beatae, facere in deleniti placeat itaque.
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- Body -->
+
+        <!-- Footer -->
+        <p class="group">17</p>
+        <p class="source_title">Source</p>
+        <div class="source_container">
+          <p class="source_value">https://en.wiktionary.org/wiki/keyboard</p>
+          <img
+            src="./assets/images/icon-new-window.svg"
+            alt="new windows icon"
+            class="source_icon"
+          />
+        </div>
+        <!-- Footer -->
+      </div>
+      <!-- Output Container -->
+    </main>
+  </body>
 </html>
