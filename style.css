@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --preto0: #050505;
+  --preto1: #1f1f1f;
+  --preto2: #2d2d2d;
+  --preto3: #3a3a3a;
+  --cinza0: #757575;
+  --cinza1: #e9e9e9;
+  --cinza2: #f4f4f4;
+  --roxo: #a445ed;
+  --vermelho: #ff5252;
+  --tamanho1: 14px;
+  --tamanho2: 18px;
+  --tamanho3: 20px;
+  --tamanho4: 24px;
+}
+
+/* ---------------- Começando o layout ----------------- */
+
+main {
+  width: 375px;
+  border: 1px solid rgb(153, 155, 156);
+  margin: 0 auto;
+  padding: 24px 24px 63px 24px;
+}
+
+/* ! Nav --------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_direita {
+  display: flex;
+  align-items: center;
+}
+
+.fonte_selecionada {
+  margin-right: 16px;
+}
+
+.arrow_down_icon {
+  border-right: 1px solid var(--cinza1);
+  padding-right: 16px;
+  padding: 10px 16px 10px 0;
+}
+
+.switch_bar {
+  width: 40px;
+  height: 20px;
+  background: var(--cinza0);
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  margin: 0 12px 0 19px;
+}
+
+.circulo {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background: white;
+  transform: translateX(-10px);
+}
+
+.circulo.ativo {
+  transform: translateX(10px);
+}
+
+/* ! Container pesquisa --------- */
+.container_pesquisa {
+  margin: 24px 0 28px 0px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  background: var(--cinza2);
+  padding-left: 20px;
+  border-radius: 16px;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--preto0);
+  font-weight: 700;
+}
+
+.search_icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 24.5px;
+}
+
+/* !Container definição head ----------- */
+.head_definicao {
+  display: flex;
+  justify-content: space-between;
+}
