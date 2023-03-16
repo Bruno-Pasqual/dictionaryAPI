@@ -25,7 +25,7 @@
 main {
   width: 375px;
   border: 1px solid rgb(153, 155, 156);
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 24px 24px 63px 24px;
 }
 
@@ -104,4 +104,77 @@ input::placeholder {
 .head_definicao {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.pronuncia_palavra {
+  color: var(--roxo);
+}
+
+.play_sound_icon {
+  width: 48px;
+}
+
+.container_definicao {
+  border-top: 1px solid var(--cinza1);
+  position: relative;
+  padding-top: 34px;
+}
+
+.title {
+  position: absolute;
+  top: -10px;
+  background: white;
+  padding: 0 25px 0 0;
+  color: var(--preto0);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-bottom: 17px;
+  color: var(--cinza0);
+  opacity: 0.6;
+}
+
+li {
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+/* ! container_sinonimos */
+
+.container_sinonimos {
+  display: flex;
+  margin-top: 24px;
+}
+
+.title_sinonimos {
+  margin-right: 39px;
+}
+
+.sinonimo {
+  color: var(--roxo);
+  font-weight: 700;
+}
+
+/* ! Source container ----- */
+.source_container {
+  border-top: 1px solid var(--cinza1);
+  margin-top: 32px;
+  padding-top: 26px;
+}
+
+.source_title {
+  color: var(--cinza0);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.wrap_source {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-left: 20px;
 }
